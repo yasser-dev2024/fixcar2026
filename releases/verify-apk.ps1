@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $releaseDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
-$apkPath = Join-Path $releaseDirectory "Masaeedi-v1.2.0-universal.apk"
+$apkPath = Join-Path $releaseDirectory "Masaeedi-v1.2.1-universal.apk"
 $sumsPath = Join-Path $releaseDirectory "SHA256SUMS.txt"
 
 if (-not (Test-Path -LiteralPath $apkPath -PathType Leaf)) {
@@ -12,7 +12,13 @@ if (-not (Test-Path -LiteralPath $sumsPath -PathType Leaf)) {
     throw "Checksum file not found: $sumsPath"
 }
 
-$expectedHash = ((Get-Content -LiteralPath $sumsPath -Encoding utf8 -TotalCount 1) -split "\s+")[0].ToUpperInvariant()
+$checksumLine = Get-Content -LiteralPath $sumsPath -Encoding utf8 |
+    Where-Object { $_ -match "Masaeedi-v1\.2\.1-universal\.apk$" } |
+    Select-Object -First 1
+if (-not $checksumLine) {
+    throw "Checksum entry for Masaeedi-v1.2.1-universal.apk was not found."
+}
+$expectedHash = ($checksumLine -split "\s+")[0].ToUpperInvariant()
 $actualHash = (Get-FileHash -LiteralPath $apkPath -Algorithm SHA256).Hash.ToUpperInvariant()
 
 Write-Host "File:     $apkPath"
