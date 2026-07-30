@@ -1815,12 +1815,50 @@ svg {
 }
 
 @media (max-width: 620px) {
+  /*
+   * Lightweight mobile rendering:
+   * Some Android GPUs produce corrupted tiles when several blurred,
+   * translucent layers overlap on a long page. Keep the same visual
+   * language without those expensive compositing layers.
+   */
+  .site-header,
+  .primary-nav,
+  .floating-card,
+  .facts-grid,
+  .screen-label {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .hero::after,
+  .hero-glow,
+  .feature-card::after {
+    display: none;
+  }
+
+  .feature-card,
+  .screen-card,
+  .download-panel,
+  .final-cta-card {
+    transform: none;
+  }
+
+  .feature-card {
+    contain: paint;
+    box-shadow: 0 12px 28px rgba(0, 8, 27, 0.16);
+  }
+
+  .shield-ring.ring-two {
+    animation: none;
+  }
+
   .container {
     width: min(100% - 28px, 1180px);
   }
 
   .site-header {
     position: sticky;
+    background: rgba(3, 16, 40, 0.98);
   }
 
   .header-inner {
@@ -1864,8 +1902,8 @@ svg {
 
   .hero-grid {
     min-height: auto;
-    padding-block: 48px 96px;
-    gap: 25px;
+    padding-block: 42px 72px;
+    gap: 18px;
   }
 
   .hero h1 {
@@ -1895,16 +1933,37 @@ svg {
   }
 
   .hero-visual {
-    min-height: 500px;
+    min-height: 390px;
+    max-height: 390px;
+    overflow: hidden;
   }
 
   .phone {
-    width: 222px;
+    width: 150px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow:
+      0 24px 48px rgba(0, 6, 22, 0.46),
+      0 0 0 3px rgba(255, 255, 255, 0.03);
+    transform: none;
+  }
+
+  .phone img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .visual-orbit {
+    width: min(82%, 330px);
+    box-shadow: none;
   }
 
   .floating-card {
-    min-width: 154px;
+    min-width: 142px;
     padding: 10px 12px;
+    background: #0b2a52;
+    box-shadow: 0 12px 26px rgba(0, 7, 22, 0.3);
   }
 
   .floating-icon {
@@ -1913,17 +1972,17 @@ svg {
   }
 
   .floating-ready {
-    inset-block-start: 68px;
-    inset-inline-start: -2px;
+    inset-block-start: 45px;
+    inset-inline-start: 3px;
   }
 
   .floating-pdf {
-    inset-block-end: 70px;
-    inset-inline-end: -2px;
+    inset-block-end: 38px;
+    inset-inline-end: 3px;
   }
 
   .facts {
-    margin-block-start: -54px;
+    margin-block-start: -36px;
   }
 
   .facts-grid {
@@ -1967,6 +2026,10 @@ svg {
 
   .feature-card {
     padding: 22px;
+  }
+
+  .screen-card:hover {
+    transform: none;
   }
 
   .workflow-layout,
@@ -2040,11 +2103,12 @@ svg {
   }
 
   .phone {
-    width: 205px;
+    width: 142px;
+    height: 330px;
   }
 
   .floating-card {
-    min-width: 145px;
+    min-width: 132px;
   }
 
   .floating-card strong {
