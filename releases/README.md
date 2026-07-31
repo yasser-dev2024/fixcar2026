@@ -1,19 +1,19 @@
 # إصدار مساعدي للأندرويد
 
-- الملف الحالي: `Masaeedi-v1.2.2-universal.apk`
-- الإصدار: `1.2.2` (`versionCode 5`)
+- الملف الحالي: `Masaeedi-v1.2.3-universal.apk`
+- الإصدار: `1.2.3` (`versionCode 6`)
 - الحزمة: `com.fixcare.fixcare_unified`
 - الحد الأدنى: Android 5.0 / API 21
 - الهدف: Android 15 / API 35
-- الحجم: 27.43 MiB
-- المعماريات: `arm64-v8a`، `armeabi-v7a`، `x86`، `x86_64`
-- SHA-256: `3C48189C2FBF1DBFA9D4C6D32ED1A1EB474F4FFB3449F14963AE94057587492D`
+- الحجم: 27.48 MiB
+- المعماريات: `arm64-v8a`، `armeabi-v7a`، `x86_64`
+- SHA-256: `C1071CAD3B28AE7CEFBE84F8F240C7E9A6C7654C6786D5F08C952644B99BD320`
 
 يفحص هذا الإصدار إذن الكاميرا الفعلي دائمًا ويعرض شاشة الأذونات عند الحاجة، حتى إذا حاول Android استعادة إعداد قديم.
 
 تنبيه: ينفذ الإصدار `1.2.2` تنظيفًا لمرة واحدة عند أول تشغيل، ويحذف بيانات العملاء والسيارات والصيانات والصور السابقة ليبدأ التطبيق فارغًا تمامًا. كما يمنع استعادة بيانات التطبيق من نسخ Android الاحتياطية.
 
-الإصداران السابقان `Masaeedi-v1.2.1-universal.apk` و`Masaeedi-v1.2.0-universal.apk` محفوظان للأرشفة فقط.
+الإصدارات السابقة `Masaeedi-v1.2.2-universal.apk` و`Masaeedi-v1.2.1-universal.apk` و`Masaeedi-v1.2.0-universal.apk` محفوظة للأرشفة فقط.
 
 للتحقق من سلامة الملف في PowerShell:
 
