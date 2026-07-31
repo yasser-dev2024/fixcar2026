@@ -1656,3 +1656,124 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Compact promotional flow: hero, product preview, retained details, download. */
+@media (min-width: 861px) {
+  .hero {
+    min-height: 720px;
+    padding: 112px 0 55px;
+  }
+
+  .hero-product {
+    min-height: 510px;
+  }
+
+  .phone-hero {
+    width: 248px;
+    height: 505px;
+  }
+
+  .orbit-one {
+    width: 450px;
+    height: 450px;
+  }
+
+  .orbit-two {
+    width: 335px;
+    height: 335px;
+  }
+
+  .trust-shell article {
+    min-height: 96px;
+    padding-block: 18px;
+  }
+
+  .showcase {
+    padding: 78px 0 46px;
+  }
+
+  .showcase-copy h2 {
+    font-size: clamp(2rem, 3.4vw, 3.15rem);
+  }
+
+  .phone-gallery {
+    min-height: 545px;
+  }
+
+  .phone-center {
+    width: 228px;
+    height: 492px;
+  }
+
+  .phone-side {
+    width: 176px;
+    height: 388px;
+  }
+
+  .details-section {
+    gap: 60px;
+    padding-block: 72px;
+  }
+
+  .accordion summary {
+    min-height: 70px;
+  }
+
+  .download-cta {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-product {
+    min-height: 470px;
+  }
+
+  .phone-hero {
+    width: 225px;
+    height: 458px;
+  }
+
+  .orbit-one {
+    width: 380px;
+    height: 380px;
+  }
+
+  .orbit-two {
+    width: 285px;
+    height: 285px;
+  }
+
+  .showcase {
+    padding-block: 68px 30px;
+  }
+
+  .details-section {
+    padding-block: 58px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-product {
+    min-height: 430px;
+  }
+
+  .phone-hero {
+    width: 202px;
+    height: 412px;
+  }
+
+  .floating-card {
+    transform: scale(0.88);
+  }
+
+  .phone-gallery {
+    min-height: 480px;
+    margin: -72px -85px 0;
+    transform: scale(0.72);
+  }
+
+  .download-cta {
+    padding-top: 52px;
+  }
+}
