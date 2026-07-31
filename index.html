@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#071a38" />
+    <meta name="theme-color" content="#031329" />
     <meta
       name="description"
-      content="تحميل تطبيق مساعدي لإدارة ورش ومراكز صيانة السيارات على Android."
+      content="مساعدي — تطبيق عربي متكامل لإدارة ورش ومراكز صيانة السيارات والعملاء والفواتير والتقارير من الجوال."
     />
-    <meta property="og:title" content="مساعدي — مدير صيانة السيارات" />
+    <meta property="og:title" content="مساعدي — مركز صيانة أذكى في يدك" />
     <meta
       property="og:description"
-      content="تطبيق عربي لإدارة العملاء والسيارات والصيانة والفواتير والتقارير."
+      content="نظّم العملاء والسيارات وأوامر الصيانة والفواتير والتقارير في تطبيق عربي واحد."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/app-icon.png" />
+    <meta property="og:url" content="https://yasser-dev2024.github.io/fixcar2026/" />
+    <meta property="og:image" content="https://yasser-dev2024.github.io/fixcar2026/assets/workshop-hero.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="assets/app-icon.png" />
     <link rel="apple-touch-icon" href="assets/app-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=1.2.3" />
-    <title>مساعدي — مدير صيانة السيارات للأندرويد</title>
+    <link rel="preload" href="assets/workshop-hero.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles.css?v=1.2.3-promo" />
+    <title>مساعدي — إدارة مركز صيانة السيارات من جوالك</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -27,7 +30,8 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Android 5.0 أو أحدث",
         "softwareVersion": "1.2.3",
-        "inLanguage": "ar"
+        "inLanguage": "ar",
+        "downloadUrl": "https://yasser-dev2024.github.io/fixcar2026/releases/Masaeedi-v1.2.3-universal.apk"
       }
     </script>
   </head>
@@ -35,240 +39,262 @@
     <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
 
     <header class="site-header">
-      <div class="header-content">
+      <nav class="nav-shell" aria-label="التنقل الرئيسي">
         <a class="brand" href="#main" aria-label="مساعدي — بداية الصفحة">
-          <img src="assets/app-icon.png" alt="" width="48" height="48" />
-          <span><strong>مساعدي</strong><small>مدير صيانة السيارات</small></span>
+          <img src="assets/app-icon.png" alt="شعار مساعدي" width="52" height="52" />
+          <span><strong>مساعدي</strong><small>إدارة مراكز صيانة السيارات</small></span>
         </a>
+
+        <div class="nav-links">
+          <a href="#features">المزايا</a>
+          <a href="#preview">داخل التطبيق</a>
+          <a href="#workflow">رحلة العمل</a>
+        </div>
+
         <a
-          class="header-download"
+          class="button button-small button-primary"
           href="releases/Masaeedi-v1.2.3-universal.apk"
           download="Masaeedi-v1.2.3-universal.apk"
         >
-          <span aria-hidden="true">↓</span>
-          تحميل التطبيق
+          <span class="download-mark" aria-hidden="true">↓</span>
+          تحميل للأندرويد
         </a>
-      </div>
+      </nav>
     </header>
 
     <main id="main">
-      <section class="product-card" aria-labelledby="page-title">
-        <div class="title-row">
-          <div>
-            <span class="eyebrow">نسخة Android الحالية</span>
-            <h1 id="page-title">🚗 مدير صيانة السيارات – نسخة أندرويد</h1>
-          </div>
-          <span class="version">1.2.3</span>
-        </div>
-
-        <p class="intro">
-          تطبيق متكامل لإدارة ورش ومراكز صيانة السيارات، يساعدك على تنظيم
-          العملاء والسيارات وعمليات الصيانة والفواتير والتقارير من مكان واحد
-          وبطريقة سهلة وسريعة.
-        </p>
-
-        <aside class="clean-install">
-          <span class="clean-icon" aria-hidden="true">✓</span>
-          <div>
-            <strong>نسخة نظيفة لكل مركز</strong>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <span class="eyebrow"><i aria-hidden="true"></i> إصدار Android متوفر الآن</span>
+            <h1 id="page-title">مركز صيانة أذكى.<br /><span>في يدك.</span></h1>
             <p>
-              يبدأ التطبيق فارغًا دون عملاء أو سيارات أو صيانات سابقة، وتبقى
-              بيانات كل مركز خاصة داخل جهازه.
+              حوّل أعمال مركزك من ملفات متفرقة إلى نظام عربي واضح يدير العميل والسيارة والصيانة
+              والفاتورة والتسليم من مكان واحد.
             </p>
-          </div>
-        </aside>
 
-        <div class="features-heading">
+            <div class="hero-actions">
+              <a
+                class="button button-primary button-large"
+                href="releases/Masaeedi-v1.2.3-universal.apk"
+                download="Masaeedi-v1.2.3-universal.apk"
+              >
+                <span class="download-mark" aria-hidden="true">↓</span>
+                <span><strong>حمّل مساعدي الآن</strong><small>الإصدار 1.2.3 · ملف APK</small></span>
+              </a>
+              <a class="button button-ghost button-large" href="#preview">
+                شاهد التطبيق
+                <span aria-hidden="true">←</span>
+              </a>
+            </div>
+
+            <div class="hero-points" aria-label="مزايا سريعة">
+              <span><b aria-hidden="true">✓</b> واجهة عربية</span>
+              <span><b aria-hidden="true">✓</b> فواتير PDF</span>
+              <span><b aria-hidden="true">✓</b> بياناتك على جهازك</span>
+            </div>
+          </div>
+
+          <div class="hero-product" aria-label="صورة من تطبيق مساعدي">
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="phone phone-hero">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <img src="assets/dashboard.webp" alt="الشاشة الرئيسية في تطبيق مساعدي" width="484" height="1077" />
+            </div>
+            <div class="floating-card floating-top">
+              <span class="float-icon blue" aria-hidden="true">✓</span>
+              <span><strong>رحلة عمل واضحة</strong><small>من الاستقبال حتى التسليم</small></span>
+            </div>
+            <div class="floating-card floating-bottom">
+              <span class="float-icon gold" aria-hidden="true">PDF</span>
+              <span><strong>فواتير احترافية</strong><small>جاهزة للإرسال والطباعة</small></span>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#features" aria-label="انتقل إلى المزايا"><span></span> اكتشف أكثر</a>
+      </section>
+
+      <section class="trust-strip" aria-label="أهم إمكانات التطبيق">
+        <div class="trust-shell">
+          <article><span aria-hidden="true">01</span><div><strong>ملف موحد</strong><small>لكل عميل وسياراته</small></div></article>
+          <article><span aria-hidden="true">02</span><div><strong>صيانة منظمة</strong><small>حالة كل سيارة بوضوح</small></div></article>
+          <article><span aria-hidden="true">03</span><div><strong>تقارير موثقة</strong><small>صور وفواتير PDF</small></div></article>
+          <article><span aria-hidden="true">04</span><div><strong>قرار أسرع</strong><small>إحصائيات ومتابعة يومية</small></div></article>
+        </div>
+      </section>
+
+      <section class="section benefits" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <span class="section-kicker">كل ما يحتاجه مركزك</span>
+          <h2 id="features-title">أعمال أقل تشتتًا.<br />خدمة أكثر احترافية.</h2>
+          <p>أدوات عملية صُممت لطريقة العمل اليومية في ورش ومراكز صيانة السيارات.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card featured-card">
+            <span class="card-icon" aria-hidden="true">👥</span>
+            <span class="card-label">العملاء والسيارات</span>
+            <h3>كل تاريخ العميل أمامك</h3>
+            <p>ملف واحد للعميل، عدة سيارات، وسجل زيارات وصيانات مترابط يسهل الرجوع إليه.</p>
+            <ul><li>بحث بالاسم أو الجوال أو اللوحة</li><li>تمييز العملاء الأكثر ترددًا</li></ul>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card-icon" aria-hidden="true">🔧</span>
+            <span class="card-label">أوامر الصيانة</span>
+            <h3>تابع كل سيارة لحظة بلحظة</h3>
+            <p>من الاستقبال والفحص إلى التنفيذ والجاهزية ثم التسليم، بحالات واضحة للفريق.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card-icon" aria-hidden="true">🧾</span>
+            <span class="card-label">الفواتير والتقارير</span>
+            <h3>مستندات تليق بمركزك</h3>
+            <p>فواتير وتقارير PDF عربية تشمل الخدمات والقطع والضريبة والضمان والتوقيع.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card-icon" aria-hidden="true">📷</span>
+            <span class="card-label">التوثيق بالصور</span>
+            <h3>قبل الصيانة وأثناءها وبعدها</h3>
+            <p>اربط الصور بالزيارة الصحيحة وشارك تقريرًا بصريًا منظمًا مع صاحب السيارة.</p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card-icon" aria-hidden="true">📊</span>
+            <span class="card-label">لوحة المتابعة</span>
+            <h3>اعرف ما يحدث الآن</h3>
+            <p>أرقام اليوم والشهر، السيارات الجاهزة والمتأخرة، وأكثر الأعطال والعملاء ترددًا.</p>
+          </article>
+
+          <article class="benefit-card privacy-card">
+            <span class="card-icon" aria-hidden="true">🛡️</span>
+            <span class="card-label">خصوصية البيانات</span>
+            <h3>لكل مركز بياناته الخاصة</h3>
+            <p>كل تثبيت جديد يبدأ نظيفًا وفارغًا، وتبقى بيانات المركز على جهازه مع النسخ الاحتياطي.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase" id="preview" aria-labelledby="preview-title">
+        <div class="showcase-shell">
+          <div class="showcase-copy">
+            <span class="section-kicker light">واجهة صنعت للعمل الحقيقي</span>
+            <h2 id="preview-title">المهم يظهر أولًا.<br />والتفاصيل تبقى قريبة.</h2>
+            <p>
+              تجربة عربية سهلة تعطي الأولوية لبيانات العميل والسيارة، وتقلل عدد الخطوات أثناء ضغط العمل.
+            </p>
+
+            <div class="showcase-list">
+              <article><b>01</b><div><strong>رئيسية عملية</strong><small>ملخص واضح واختصارات للمهام اليومية.</small></div></article>
+              <article><b>02</b><div><strong>زيارة مترابطة</strong><small>الشكوى والتشخيص والخدمات والدفع في سياق واحد.</small></div></article>
+              <article><b>03</b><div><strong>توثيق سهل</strong><small>صور السيارة محفوظة داخل ملفها والزيارة الخاصة بها.</small></div></article>
+            </div>
+          </div>
+
+          <div class="phone-gallery" aria-label="لقطات من التطبيق">
+            <figure class="phone phone-side phone-right">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <img src="assets/visit-details.webp" alt="تفاصيل زيارة صيانة داخل التطبيق" width="484" height="1077" loading="lazy" />
+              <figcaption>تفاصيل الزيارة</figcaption>
+            </figure>
+            <figure class="phone phone-center">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <img src="assets/dashboard.webp" alt="لوحة التطبيق الرئيسية" width="484" height="1077" loading="lazy" />
+              <figcaption>لوحة المركز</figcaption>
+            </figure>
+            <figure class="phone phone-side phone-left">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <img src="assets/visit-photos.webp" alt="توثيق صور السيارة داخل التطبيق" width="484" height="1077" loading="lazy" />
+              <figcaption>صور الصيانة</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading centered">
+          <span class="section-kicker">من دخول السيارة حتى خروجها</span>
+          <h2 id="workflow-title">مسار واحد لا يضيّع التفاصيل</h2>
+          <p>كل مرحلة مرتبطة بما قبلها وما بعدها، ليعرف فريقك الخطوة التالية دائمًا.</p>
+        </div>
+
+        <div class="workflow-line">
+          <article><span>01</span><div><strong>استقبال</strong><small>العميل والسيارة والشكوى</small></div></article>
+          <article><span>02</span><div><strong>فحص</strong><small>التشخيص والصور والتقدير</small></div></article>
+          <article><span>03</span><div><strong>تنفيذ</strong><small>الخدمات والقطع والمتابعة</small></div></article>
+          <article><span>04</span><div><strong>اعتماد</strong><small>الفاتورة والضمان والتوقيع</small></div></article>
+          <article><span>05</span><div><strong>تسليم</strong><small>إغلاق الزيارة وإرسال الملف</small></div></article>
+        </div>
+      </section>
+
+      <section class="section details-section" aria-labelledby="details-title">
+        <div class="details-intro">
+          <span class="section-kicker">تفاصيل أكثر عند الحاجة</span>
+          <h2 id="details-title">تطبيق يتسع لنمو مركزك</h2>
+          <p>اضغط على كل قسم لعرض ما يندرج تحته من إمكانات.</p>
+          <div class="clean-note"><span aria-hidden="true">✓</span><p><strong>تثبيت جديد ونظيف</strong> بلا بيانات تجريبية أو بيانات مستخدم سابق.</p></div>
+        </div>
+
+        <div class="accordion">
+          <details open>
+            <summary><span><b>01</b><strong>إدارة العملاء والسيارات</strong></span><i aria-hidden="true">＋</i></summary>
+            <div><p>ملف موحد لكل عميل مع عدة سيارات، وسجل مستقل لكل سيارة وصيانتها وزياراتها وفواتيرها.</p><ul><li>بحث سريع بعدة بيانات</li><li>أرشفة كاملة ومنظمة</li><li>عميل مميز وخصوماته</li></ul></div>
+          </details>
+          <details>
+            <summary><span><b>02</b><strong>دورة الصيانة الكاملة</strong></span><i aria-hidden="true">＋</i></summary>
+            <div><p>استقبال وتوثيق وتشخيص واعتماد وتنفيذ وتسليم، مع حالة واضحة وتنبيهات للزيارات المتأخرة.</p><ul><li>عدد غير محدود من الصيانات</li><li>صور قبل وأثناء وبعد العمل</li><li>إدارة العامل والخدمات والقطع</li></ul></div>
+          </details>
+          <details>
+            <summary><span><b>03</b><strong>الفواتير والضمان والتقارير</strong></span><i aria-hidden="true">＋</i></summary>
+            <div><p>مستندات PDF مترابطة تلقائيًا بالعميل والسيارة، جاهزة للطباعة أو المشاركة عند التسليم.</p><ul><li>بيانات المركز والشعار والتوقيع</li><li>مدة ونص الضمان</li><li>تقرير صور مضغوط ومنظم</li></ul></div>
+          </details>
+          <details>
+            <summary><span><b>04</b><strong>الإحصائيات وحماية البيانات</strong></span><i aria-hidden="true">＋</i></summary>
+            <div><p>لوحة متابعة تساعدك على قراءة نشاط المركز، مع إبقاء بيانات كل مركز مستقلة على جهازه.</p><ul><li>إحصائيات يومية وشهرية</li><li>الأكثر ترددًا والأعطال الشائعة</li><li>نسخ احتياطي واستعادة</li></ul></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="download-cta" id="download" aria-labelledby="download-title">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="download-shell">
+          <img src="assets/app-icon.png" alt="شعار تطبيق مساعدي" width="112" height="112" loading="lazy" />
           <div>
-            <h2>مزايا التطبيق</h2>
-            <p>كل نقطة تحتوي تفاصيل إضافية.</p>
+            <span class="section-kicker light">ابدأ بتنظيم مركزك اليوم</span>
+            <h2 id="download-title">كل سيارة. كل عميل.<br />كل تفصيلة في مكانها.</h2>
+            <p>حمّل النسخة الحالية للأندرويد وابدأ ببيانات نظيفة خاصة بمركزك.</p>
           </div>
-          <span class="tap-hint">اضغط على أي نقطة لعرض التفاصيل ↓</span>
+          <a
+            class="button button-primary button-large cta-button"
+            href="releases/Masaeedi-v1.2.3-universal.apk"
+            download="Masaeedi-v1.2.3-universal.apk"
+          >
+            <span class="download-mark" aria-hidden="true">↓</span>
+            <span><strong>تحميل للأندرويد</strong><small>الإصدار 1.2.3 · APK</small></span>
+          </a>
         </div>
-
-        <div class="feature-list">
-          <details class="feature-item" open>
-            <summary>
-              <span class="feature-number">01</span>
-              <span class="feature-title">استقبال السيارة مع تصويرها وتوثيق حالتها قبل الصيانة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>تسجيل بيانات الاستقبال والشكوى وحالة السيارة بوضوح.</li>
-              <li>إرفاق صور توثيقية قبل بدء العمل والرجوع إليها لاحقًا.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">02</span>
-              <span class="feature-title">حفظ بيانات العميل مع إمكانية إضافة أكثر من سيارة لنفس العميل.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>ملف موحد لاسم العميل ورقم التواصل وبياناته.</li>
-              <li>ربط عدة سيارات بالعميل نفسه دون تكرار ملفه.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">03</span>
-              <span class="feature-title">حفظ عدد غير محدود من عمليات الصيانة لكل سيارة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>سجل مستقل لكل زيارة وصيانة مرتب زمنيًا.</li>
-              <li>العودة إلى الأعمال السابقة والتكاليف والحالة بسهولة.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">04</span>
-              <span class="feature-title">إنشاء أوامر الإصلاح وإدارة مراحل الصيانة حتى التسليم.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>متابعة الأمر من الاستقبال والفحص إلى التنفيذ والجاهزية.</li>
-              <li>تحديث الحالة وإغلاق الزيارة عند التسليم.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">05</span>
-              <span class="feature-title">إصدار فواتير احترافية وتقارير PDF شاملة وجاهزة للطباعة أو الإرسال.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>فواتير PDF عربية واضحة تشمل الخدمات والقطع والتكاليف.</li>
-              <li>تقارير جاهزة للحفظ والطباعة والمشاركة مع العميل.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">06</span>
-              <span class="feature-title">حفظ صور السيارة قبل الصيانة وبعدها داخل الملف.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>تصنيف الصور حسب مرحلة الصيانة لسهولة المراجعة.</li>
-              <li>الاحتفاظ بالصور ضمن سجل السيارة والزيارة المرتبطة بها.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">07</span>
-              <span class="feature-title">متابعة حالة السيارة لحظة بلحظة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>معرفة المرحلة الحالية لكل سيارة من شاشة واحدة.</li>
-              <li>تمييز السيارات قيد العمل والجاهزة والمغلقة بسرعة.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">08</span>
-              <span class="feature-title">تنبيهات للمركبات المتأخرة في الصيانة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>إبراز الزيارات التي تجاوزت المدة المتوقعة.</li>
-              <li>مساعدة فريق المركز على ترتيب الأولويات والمتابعة.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">09</span>
-              <span class="feature-title">إدارة الضمان مع تنبيهات قبل انتهاء الضمان وبعد انتهائه.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>تحديد مدة الضمان من إعدادات المركز.</li>
-              <li>عرض حالة الضمان وتنبيهات الاستحقاق بوضوح.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">10</span>
-              <span class="feature-title">البحث السريع برقم الجوال أو اسم العميل أو رقم اللوحة أو بيانات السيارة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>الوصول السريع إلى العميل أو السيارة من أكثر من معلومة.</li>
-              <li>تقليل وقت البحث عند الاستقبال أو متابعة الزيارة.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">11</span>
-              <span class="feature-title">أرشفة كاملة لجميع العملاء والسيارات وسجل الصيانة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>تنظيم الملفات وربط كل سيارة بصياناتها السابقة.</li>
-              <li>الاحتفاظ بسجل واضح يساعد على سرعة اتخاذ القرار.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">12</span>
-              <span class="feature-title">مشاركة الفواتير والتقارير وروابط المتابعة مع العميل بسهولة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>استخدام خيارات المشاركة المتاحة في Android.</li>
-              <li>إرسال المستند المطلوب للعميل بخطوات قليلة.</li>
-            </ul>
-          </details>
-
-          <details class="feature-item">
-            <summary>
-              <span class="feature-number">13</span>
-              <span class="feature-title">واجهة عربية سهلة وسريعة تناسب الاستخدام اليومي داخل الورشة.</span>
-              <span class="feature-action"><span>عرض التفاصيل</span><b aria-hidden="true">⌄</b></span>
-            </summary>
-            <ul>
-              <li>تصميم واضح ومتجاوب مع شاشات الجوال والوضع الأفقي.</li>
-              <li>بيانات العميل والسيارة في مقدمة الصفحات المهمة.</li>
-            </ul>
-          </details>
-        </div>
-
-        <div class="platforms">
-          <div class="platform available">
-            <span aria-hidden="true">🤖</span>
-            <div><strong>متوفر الآن</strong><small>نسخة Android جاهزة للتحميل</small></div>
-          </div>
-          <div class="platform coming">
-            <span aria-hidden="true">🍎</span>
-            <div><strong>نسخة iPhone قادمة</strong><small>بإذن الله في تحديث لاحق</small></div>
-          </div>
-        </div>
-
-        <a
-          class="main-download"
-          href="releases/Masaeedi-v1.2.3-universal.apk"
-          download="Masaeedi-v1.2.3-universal.apk"
-        >
-          <span aria-hidden="true">↓</span>
-          <span><strong>تحميل مساعدي للأندرويد</strong><small>الإصدار 1.2.3 — ملف APK</small></span>
-        </a>
       </section>
     </main>
 
     <footer>
-      <img src="assets/app-icon.png" alt="" width="32" height="32" />
-      <span>مساعدي — إدارة مركز الصيانة بوضوح</span>
+      <div class="footer-shell">
+        <a class="brand footer-brand" href="#main">
+          <img src="assets/app-icon.png" alt="" width="42" height="42" loading="lazy" />
+          <span><strong>مساعدي</strong><small>إدارة مركز الصيانة بوضوح</small></span>
+        </a>
+        <p>مصمم لورش ومراكز صيانة السيارات · Android</p>
+        <a href="#main">العودة للأعلى ↑</a>
+      </div>
     </footer>
+
+    <div class="mobile-download">
+      <span><img src="assets/app-icon.png" alt="" width="38" height="38" /><b>مساعدي<small>Android · 1.2.3</small></b></span>
+      <a href="releases/Masaeedi-v1.2.3-universal.apk" download="Masaeedi-v1.2.3-universal.apk">تحميل الآن <b aria-hidden="true">↓</b></a>
+    </div>
   </body>
 </html>
